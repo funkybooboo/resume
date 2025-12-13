@@ -1,255 +1,201 @@
 %-------------------------------------------------------------------------------
-% CONFIGURATIONS
+% DOCUMENT CLASS AND PACKAGES
 %-------------------------------------------------------------------------------
-\documentclass[10pt, a4paper]{russell}
-\geometry{left=.9cm, top=.9cm, right=.9cm, bottom=.9cm, footskip=.4cm}
-\fontdir[fonts/]
-\colorlet{russell}{russell-darknight}
-\setbool{acvSectionColorHighlight}{true}
-\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+\documentclass[11pt,a4paper,sans]{moderncv}
 
+% moderncv themes
+\moderncvstyle{banking}                             % style options: 'casual', 'classic', 'banking', 'oldstyle', 'fancy'
+\moderncvcolor{blue}                               % color options: 'blue', 'orange', 'green', 'red', 'purple', 'grey', 'black'
+
+% character encoding
+\usepackage[utf8]{inputenc}
+
+% adjust the page margins
+\usepackage[scale=0.92]{geometry}
+\setlength{\hintscolumnwidth}{3cm}                 % width of the column for dates
+
+% improve typography for long text
+\usepackage{ragged2e}
+\setlength{\RaggedRightParindent}{0pt}
+
+%-------------------------------------------------------------------------------
+% PERSONAL DATA
+%-------------------------------------------------------------------------------
 \name{Nate}{Stott}
-\position{Software Engineer {\enskip\cdotp\enskip} Computer Scientist}
-\address{Logan, Utah, 84321, USA}
-\mobile{+1 (801)-708-3373}
+\title{Software Engineer | Computer Scientist}
+\address{Logan, Utah}{84321}{USA}
+\phone[mobile]{+1~(801)~708~3373}
 \email{nate.stott@pm.me}
-\github{github.com/funkybooboo}
-\linkedin{linkedin.com/in/nate-stott1}
+\social[github]{funkybooboo}
+\social[linkedin]{nate-stott1}
 
+%-------------------------------------------------------------------------------
+% CONTENT
+%-------------------------------------------------------------------------------
 \begin{document}
 
-\makecvheader
-\makecvfooter{\today}{}{\thepage}
+\begin{sloppypar}
+\makecvtitle
+\end{sloppypar}
 
-\cvsection{Skills}
-\begin{cvskills}
+%-------------------------------------------------------------------------------
+% PROFESSIONAL SUMMARY
+%-------------------------------------------------------------------------------
+\section{Professional Summary}
 
-    \cvskill
-        {Code}
-        {\parbox[t]{0.99\linewidth}{
-            Java/Kotlin (SpringBoot, Jakarta, Lombok, MapStruct, Thymeleaf, Hibernate, Jetpack Compose, Android, Gradle, Maven, JUnit); 
-            JavaScript/TypeScript (React (React Query), React Native, Vue, Next, Node, Bun, Express, Redux, Prisma, Jest, Storybook, Prettier, Electron, Webpack, ESBuild, Vite, ESLint); 
-            Python (Django, Flask, SQLAlchemy, Tkinter, NumPy, Pandas, SciPy, Matplotlib, PyTorch, PyTenser, Gymnasium, Openpyxl, Xlwings, Black, Poetry);
-            C/C++ (Make/Autotools, GCC/Clang toolchains, GDB, GTest, CMake, Qt, RAII);
-            Rust (Tokio, SQLx);
-            C\# (.NET, ASP.NET, Entity Framework, Dapper); 
-            Go (Gin, GORM, sqlx);
-            Bash/Zsh;
-            PowerShell;
-            HTML;
-            CSS (sass, tailwind, bootstrap);
-            x86 Asm (NASM);
-            Lua;
-            Haskell;
-            Nix (flake, command);
-            Dart (Flutter).
-        }}
+Software engineer with extended internship at Domo based on strong performance contributing to production systems at scale. MS Computer Science candidate at Utah State University specializing in Artificial Intelligence, with demonstrated mastery of core AI concepts. Nominated for TA of the Year 2025, delivering lectures and mentoring students on software development practices, design patterns, and real-world engineering challenges. Nominated for Undergraduate Researcher of the Year 2024.
 
-    \cvskill
-        {Tools}
-        {\parbox[t]{0.99\linewidth}{
-            Git;  
-            GitHub (Secrets, Actions/Act, Copilot, Gh);  
-            GitLab (Self hosting);
-            Vim;  
-            Neovim;  
-            JetBrains;  
-            Visual Studio;  
-            VS Code;  
-            JAWS;  
-            Selenium;  
-            Cypress;  
-            Playwright;  
-            Postman (newman);  
-            Vitest;    
-            LaTeX (Overleaf, Pandoc);  
-            Markdown (Obsidian);  
-            UML (draw.io, Lucidchart);  
-            Jira;  
-            Figma.
-        }}
+Strong advocate for Twelve-Factor App methodology, applying these principles rigorously to ensure scalability, maintainability, and cloud-native deployment. Linux power user running GrapheneOS for security hardening. Solve daily LeetCode problems and regularly tackle CodeCrafters challenges to maintain sharp algorithmic thinking and deepen systems programming knowledge.
 
-    \cvskill
-        {Data}
-        {\parbox[t]{0.99\linewidth}{
-            MySQL;
-            MariaDB;  
-            PostgreSQL;  
-            SQLite;  
-            Azure SQL;
-            MongoDB;  
-            Redis;
-            Elasticsearch;
-            JSON;  
-            YAML;  
-            TOML;  
-            XML;  
-            CSV;
-            Neo4j;
-            Pinecode;
-            Qdrant.
-        }}
+Core competencies: software architecture and design patterns, artificial intelligence and machine learning, systems programming and automation, DevOps and infrastructure-as-code practices, and technical mentoring.
 
-    \cvskill
-        {Hosting}
-        {\parbox[t]{0.99\linewidth}{
-            AWS (EC2, S3, Lambda, IAM, VPC, RDS/Aurora, DynamoDB, ElastiCache, API Gateway, SNS, SQS, EventBridge, Route 53, ECS, EKS, Step Functions, Elastic Beanstalk);  
-            Google Cloud (Compute Engine, Cloud Functions);  
-            Azure (App Service, Functions, AKS, DevOps, Storage);  
-            DigitalOcean (Droplets, Domains);  
-            Heroku (Dynos);  
-            Vercel (Serverless Functions);  
-            Docker (Hub, Compose, Swarm, Networking, Volumes);
-            Podman;
-            Kubernetes;
-            Multipass;
-            Nginx;  
-            Apache (HTTP, Kafka);  
-            IIS;  
-            Jenkins;  
-            SSH (OpenSSH);  
-            QEMU/KVM;  
-            VMware;  
-            VirtualBox;  
-            Cloudflare;  
-            Datadog;  
-            LogRocket;  
-            Sentry; 
-            Railway;
-            Linux (Debian, RHEL, Arch, NixOS, systemd services \& timers));  
-            FreeBSD (Ports);  
-            MacOS (Homebrew);  
-            Windows (Chocolatey, Scoop, Winget, Windows Services, Task Scheduler, PowerShell).
-        }}
-    
-    \cvskill
-        {Services}
-        {\parbox[t]{0.99\linewidth}{
-            Appian;  
-            Azure Active Directory;  
-            Box (API);  
-            Contentstack;  
-            GitHub (API);  
-            GitLab (API);  
-            Hugging Face;  
-            Ollama;
-            OAuth 2.0;  
-            Okta;  
-            OpenAI;  
-            OpenAPI;  
-            OpenID Connect;  
-            PayPal;  
-            REST (JSON, HTTP verbs);  
-            SAML;  
-            Shopify;  
-            Klarna;
-            SOAP;  
-            OCPP (1.6, 2.0.1);
-            Stripe;  
-            Swagger (OpenAPI UI);  
-            Twilio;  
-            WebSockets (Socket.IO, WS);  
-            WordPress;
-            n8n.
-        }}
-    
-\end{cvskills}
+%-------------------------------------------------------------------------------
+% SKILLS
+%-------------------------------------------------------------------------------
+\section{Skills}
 
-\cvsection{Projects}
-\begin{cventries}
+\begin{RaggedRight}
+\cvitem{Code}{Java/Kotlin (SpringBoot, Jakarta, Lombok, MapStruct, Thymeleaf, Hibernate, Jetpack Compose, Android, Gradle, Maven, JUnit); JavaScript/TypeScript (React (React Query), React Native, Vue, Next, Node, Bun, Express, Redux, Prisma, Jest, Storybook, Prettier, Electron, Webpack, ESBuild, Vite, ESLint); Python (Django, Flask, SQLAlchemy, Tkinter, NumPy, Pandas, SciPy, Matplotlib, PyTorch, PyTensor, Gymnasium, Openpyxl, Xlwings, Black, Poetry); C/C++ (Make/Autotools, GCC/Clang toolchains, GDB, GTest, CMake, Qt, RAII); Rust (Tokio, SQLx); C\# (.NET, ASP.NET, Entity Framework, Dapper); Go (Gin, GORM, sqlx); Bash/Zsh; PowerShell; HTML; CSS (sass, tailwind, bootstrap); x86 Asm (NASM); Lua; Haskell; Nix (flake, command); Dart (Flutter).}
 
-    \cventry
-        {Backend Engineer}
-        {Powerplay}
-        {Logan, Utah}
-        {June 2024 – August 2024}
-        {
-            \begin{cvitems}
-                \item Designed and optimized a robust scheduling algorithm that ensures fair and efficient match generation for teams.
-                \item Contributed to an open source sports management system using Go and Vue, enhancing back-end performance and maintainability.
-                \item Integrated RESTful API endpoints and implemented data validation middleware, improving data integrity across services.
-            \end{cvitems}
-        }
+\cvitem{Tools}{Git; GitHub (Secrets, Actions/Act, Copilot, Gh); GitLab (Self hosting); Vim; Neovim; JetBrains; Visual Studio; VS Code; JAWS; Selenium; Cypress; Playwright; Postman (newman); Vitest; LaTeX (Overleaf, Pandoc); Markdown (Obsidian); UML (draw.io, Lucidchart); Jira; Figma.}
 
-\end{cventries}
+\cvitem{Data}{MySQL; MariaDB; PostgreSQL; SQLite; Azure SQL; MongoDB; Redis; Elasticsearch; JSON; YAML; TOML; XML; CSV; Neo4j; Pinecone; Qdrant.}
 
-\cvsection{Experience}
-\begin{cventries}
+\cvitem{Hosting}{AWS (EC2, S3, Lambda, IAM, VPC, RDS/Aurora, DynamoDB, ElastiCache, API Gateway, SNS, SQS, EventBridge, Route 53, ECS, EKS, Step Functions, Elastic Beanstalk); Google Cloud (Compute Engine, Cloud Functions); Azure (App Service, Functions, AKS, DevOps, Storage); DigitalOcean (Droplets, Domains); Heroku (Dynos); Vercel (Serverless Functions); Docker (Hub, Compose, Swarm, Networking, Volumes); Podman; Kubernetes; Multipass; Nginx; Apache (HTTP, Kafka); IIS; Jenkins; SSH (OpenSSH); QEMU/KVM; VMware; VirtualBox; Cloudflare; Datadog; LogRocket; Sentry; Railway; Linux (Debian, RHEL, Arch, NixOS, systemd services \& timers); FreeBSD (Ports); MacOS (Homebrew); Windows (Chocolatey, Scoop, Winget, Windows Services, Task Scheduler, PowerShell).}
 
-    \cventry
-        {Domo}
-        {Software Engineer Intern}
-        {American Fork, Utah}
-        {September 2025 – Present}
-        {
-            \begin{cvitems}
-                \item Integrated Domo’s data platform with cloud warehouses like Snowflake and BigQuery for reliable data transfer.
-                \item Optimized database queries and API requests to improve platform performance, reliability, and scalability.
-                \item Documented processes and helped implement new platform features to support maintainability and team knowledge sharing.
-            \end{cvitems}
-        }
+\cvitem{Services}{Appian; Azure Active Directory; Box (API); Contentstack; GitHub (API); GitLab (API); Hugging Face; Ollama; OAuth 2.0; Okta; OpenAI; OpenAPI; OpenID Connect; PayPal; REST (JSON, HTTP verbs); SAML; Shopify; Klarna; SOAP; OCPP; Stripe; Swagger; Twilio; WebSockets (Socket.IO, WS); WordPress; n8n.}
+\end{RaggedRight}
 
-    \cventry
-        {Utah State University}
-        {Graduate Teaching Assistant}
-        {Logan, Utah}
-        {August 2025 – Present}
-        {
-            \begin{cvitems}
-                \item Assist in delivering lectures and labs for undergraduate courses in computer science.
-                \item Provide technical support to students, guiding them through assignments and projects.
-                \item Collaborate with faculty on research projects and contribute to curriculum development.
-            \end{cvitems}
-        }
+%-------------------------------------------------------------------------------
+% PROJECTS
+%-------------------------------------------------------------------------------
+\section{Projects}
 
-    \cventry
-        {Provider Resources Inc}
-        {Junior Software Engineer}
-        {Erie, Pennsylvania}
-        {October 2024 – September 2025}
-        {
-            \begin{cvitems}
-                \item Refactored and replaced legacy systems, improving software maintainability and performance across multiple teams.
-                \item Introduced modern tooling and agile practices, resulting in a more efficient and collaborative development environment.
-                \item Participated in cross-functional code reviews and knowledge sharing, fostering a culture of continuous improvement.
-            \end{cvitems}
-        }
+\cventry{July 2024 -- December 2024}{Electric Vehicle Charger Reservation Service}{Contributor}{Logan, Utah}{}{
+    \begin{itemize}
+        \item Contributed to React/Express web application for EV charging reservations with PayPal integration and OCPP protocol for real-time communication with charging stations.
+        \item Integrated LSTM neural network to predict electricity prices and provide dynamic cost estimates for users.
+        \item Co-authored research published in IEEE on web application enabling precise management of EV charging reservations with dynamic power curtailment.
+    \end{itemize}
+}
 
-\end{cventries}
+\cventry{2025}{Rylee - Chess Engine}{Creator}{Remote}{}{
+    \begin{itemize}
+        \item Developed advanced chess engine mimicking human playing behavior using AI techniques and machine learning.
+        \item Implemented naturalistic gameplay patterns that go beyond simple optimization to capture nuances of human decision-making.
+    \end{itemize}
+}
 
-\cvsection{Certifications}
-\begin{cventries}
-    \cventry
-        {Amazon Web Services}
-        {Cloud Practitioner Foundations}
-        {Remote}
-        {September 2023}
-        {
-            \begin{cvitems}
-                \item Built foundational knowledge in core AWS services including EC2, S3, Lambda, and CloudFormation.
-                \item Gained hands-on experience using the AWS CLI and SDKs to automate deployments and streamline operations.
-                \item Demonstrated understanding of AWS security best practices, including IAM roles, policies, and the shared responsibility model.
-            \end{cvitems}
-        }
-\end{cventries}
+\cventry{Ongoing}{Alle - Task Management Application}{Creator}{Remote}{}{
+    \begin{itemize}
+        \item Built custom task management application from the ground up using React 19/TypeScript frontend and Rust/Tokio backend with GraphQL API to extend TeuxDeux functionality with features tailored specifically to personal workflow needs.
+        \item Implemented drag-and-drop task organization, automatic rollover for incomplete tasks, recurring task patterns, and offline functionality addressing productivity needs that off-the-shelf applications couldn't satisfy.
+        \item Developed comprehensive testing strategy with 60+ tests (unit, integration, E2E) achieving high code coverage across the monorepo architecture.
+        \item Utilized SeaORM with SQLite, Tower HTTP framework, and containerized deployment with Docker Compose.
+    \end{itemize}
+}
 
-\cvsection{Education}
-\begin{cventries}
-     \cventry
-        {Utah State University}
-        {M.S. in Computer Science}
-        {Logan, Utah}
-        {August 2025 – August 2026}
-        {
-            \begin{cvitems}
-                \item Focus on advanced topics in machine learning, distributed systems, and cloud computing.
-                \item Actively involved in research projects related to AI and data engineering.
-                \item Engaged in industry partnerships and internships to apply theoretical knowledge in real-world environments.
-            \end{cvitems}
-        }
-\end{cventries}
+%-------------------------------------------------------------------------------
+% EXPERIENCE
+%-------------------------------------------------------------------------------
+\section{Experience}
+
+\cventry{September 2025 -- Present}{Software Engineer Intern}{Domo}{American Fork, Utah}{}{
+    \begin{itemize}
+        \item Integrated Domo's data platform with cloud warehouses like Snowflake and BigQuery for reliable data transfer.
+        \item Built and optimized data pipelines using Databricks and SQL to handle large-scale datasets and reduce processing time.
+        \item Improved system performance by refining database queries, API requests, and caching strategies.
+        \item Automated routine data validation and monitoring tasks, reducing manual effort and increasing data accuracy.
+        \item Collaborated cross-functionally with engineers, analysts, and product managers in an Agile/Scrum environment.
+    \end{itemize}
+}
+
+\cventry{August 2025 -- Present}{Graduate Teaching Assistant}{Utah State University}{Logan, Utah}{}{
+    \begin{itemize}
+        \item Deliver lectures and labs for CS5110 (Multi-Agent Systems) and CS3450 (Introduction to Software Engineering), going beyond traditional TA responsibilities.
+        \item Mentor students on proper software development practices and design patterns, guiding them through real-world software engineering challenges that prepare them for their careers.
+        \item Collaborate with faculty on research projects and contribute to curriculum development.
+        \item Develop and grade assignments, exams, and projects to assess student learning and provide constructive feedback.
+    \end{itemize}
+}
+
+\cventry{October 2024 -- September 2025}{Junior Software Engineer}{Provider Resources Inc}{Erie, Pennsylvania}{}{
+    \begin{itemize}
+        \item Drove innovation through agile development practices and Test-Driven Development (TDD) to ensure high-quality code and reduce bugs.
+        \item Conducted penetration testing on web applications, identifying vulnerabilities and enhancing overall security posture.
+        \item Spearheaded the adoption of Docker, improving security, modularity, and development speed across teams.
+        \item Led the removal of legacy code and outdated practices, implementing streamlined solutions to address cross-team challenges.
+        \item Transitioned team from Azure DevOps to GitHub, establishing an efficient CI/CD pipeline that enhanced productivity.
+        \item Engineered web applications using Microsoft .NET (C\#) and React, adhering to best coding practices for high-quality delivery.
+        \item Drove company-wide workflow automation initiatives, significantly reducing manual tasks and operational costs across departments.
+    \end{itemize}
+}
+
+%-------------------------------------------------------------------------------
+% PUBLICATIONS
+%-------------------------------------------------------------------------------
+\section{Publications}
+
+\cventry{August 2024}{Electric Vehicle Charger Reservation Service}{IEEE}{Remote}{}{
+    \begin{itemize}
+        \item Published research on web application enabling precise management of EV charging reservations with dynamic power curtailment.
+        \item Demonstrated integration of LSTM neural networks for electricity price prediction and OCPP protocol for real-time communication.
+        \item Currently deployed at Utah State University's Electric Vehicle Roadway (EVR) facility.
+    \end{itemize}
+}
+
+\cventry{April 2024}{Comparing Feedback from Large Language Models and Instructors}{ACM}{Remote}{}{
+    \begin{itemize}
+        \item Co-authored paper presented at Learning@Scale 2024 evaluating AI feedback effectiveness in computer science education.
+        \item Developed algorithms to prompt ChatGPT-4 to provide feedback on student submissions.
+        \item Analyzed data collected from user studies to draw conclusions and make recommendations for future research.
+    \end{itemize}
+}
+
+%-------------------------------------------------------------------------------
+% CERTIFICATIONS
+%-------------------------------------------------------------------------------
+\section{Certifications}
+
+\cventry{May 2024}{Introduction to Linux}{edX}{Remote}{}{
+    \begin{itemize}
+        \item Completed verified certificate program covering GNU/Linux fundamentals and shell scripting.
+        \item Gained proficiency in Linux system administration, command-line operations, and automation scripting.
+    \end{itemize}
+}
+
+\cventry{September 2023}{Cloud Practitioner Foundations}{Amazon Web Services}{Remote}{}{
+    \begin{itemize}
+        \item Built foundational knowledge in core AWS services including EC2, S3, Lambda, and CloudFormation.
+        \item Gained hands-on experience using the AWS CLI and SDKs to automate deployments and streamline operations.
+        \item Demonstrated understanding of AWS security best practices, including IAM roles, policies, and the shared responsibility model.
+    \end{itemize}
+}
+
+%-------------------------------------------------------------------------------
+% EDUCATION
+%-------------------------------------------------------------------------------
+\section{Education}
+
+\cventry{August 2025 -- July 2026}{M.S. in Computer Science}{Utah State University}{Logan, Utah}{}{
+    \begin{itemize}
+        \item Specializing in Artificial Intelligence with focus on machine learning, distributed systems, and cloud computing.
+        \item Actively involved in research projects related to AI and data engineering, including multi-agent systems.
+        \item Published peer-reviewed research in IEEE and ACM conferences.
+    \end{itemize}
+}
+
+\cventry{August 2021 -- December 2024}{B.S. in Computer Science}{Utah State University}{Logan, Utah}{}{
+    \begin{itemize}
+        \item Led group projects and coordinated tasks to ensure timely delivery of project milestones.
+        \item Excelled in coursework with high academic recognition, consistently achieving top grades.
+        \item Active member of Free Software and Linux Club, participating in coding competitions and hackathons.
+    \end{itemize}
+}
 
 \vspace*{\fill}
-\centering{\textbf{For more details, visit my LinkedIn.}}
+\begin{center}
+    \textbf{For more details, visit my LinkedIn.}
+\end{center}
 
 \end{document}
