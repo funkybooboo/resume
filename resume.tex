@@ -79,11 +79,11 @@ Strong advocate for clean architecture, test-driven development, and twelve-fact
 
   \cvskill
     {Backend}
-    {SpringBoot, Django, Flask, Rails, .NET/ASP.NET, Node/Express, Gin, Tokio; REST APIs, GraphQL, WebSockets, gRPC, OAuth 2.0, SAML, OpenID Connect.}
+    {SpringBoot, Django, Flask, Rails, .NET/ASP.NET, Node/Express, Hono, Gin, Tokio; REST APIs, GraphQL, WebSockets, gRPC, OAuth 2.0, SAML, OpenID Connect.}
 
   \cvskill
     {Frontend}
-    {React (Query, Native), Vue, Next.js, Electron, Jetpack Compose, Flutter; Tailwind, Bootstrap, Sass; Webpack, Vite, ESBuild.}
+    {React (Query, Native), Vue, Svelte/SvelteKit, Next.js, Electron, Jetpack Compose, Flutter; Tailwind, Bootstrap, Sass; Webpack, Vite, ESBuild.}
 
   \cvskill
     {Data Engineering}
@@ -91,11 +91,11 @@ Strong advocate for clean architecture, test-driven development, and twelve-fact
 
   \cvskill
     {Databases}
-    {PostgreSQL, MySQL, MongoDB, Redis, SQLite, DynamoDB, Neo4j, Pinecone, Qdrant; ORMs (Hibernate, SQLAlchemy, Prisma, Entity Framework, SeaORM).}
+    {PostgreSQL, MySQL, MongoDB, Redis, SQLite, DynamoDB, Neo4j, Pinecone, Qdrant; ORMs (Hibernate, SQLAlchemy, Prisma, Drizzle, Entity Framework, SeaORM).}
 
   \cvskill
     {Cloud \& DevOps}
-    {AWS (EC2, S3, Lambda, RDS, ECS/EKS, CloudFormation); GCP (Compute, Cloud Run, Functions); Azure (App Service, AKS, DevOps); Docker, Kubernetes, Terraform; Jenkins, GitHub Actions, GitLab CI/CD; Nginx, Apache; Datadog, Sentry, LogRocket.}
+    {AWS (EC2, S3, Lambda, RDS, ECS/EKS, CloudFormation); GCP (Compute, Cloud Run, Functions); Azure (App Service, AKS, DevOps); Cloudflare (Pages, Workers, D1, R2, KV); Hetzner Cloud, Backblaze B2; Docker, Kubernetes, Terraform; Jenkins, GitHub Actions, GitLab CI/CD; Traefik, Nginx, Apache; Keycloak, OAuth/OIDC; Datadog, Sentry, LogRocket.}
 
   \cvskill
     {AI/ML}
@@ -201,6 +201,21 @@ Strong advocate for clean architecture, test-driven development, and twelve-fact
 
   \cventry
     {Creator \& Maintainer}
+    {Artisan Commerce - E-Commerce Platform with Queue-Based Capacity Management}
+    {Open Source}
+    {2026 - Present}
+    {
+      \begin{cvitems}
+        \item {Architected serverless edge platform for artisan e-commerce using SvelteKit frontend and Cloudflare Workers backend, optimized for <\$5/month operational costs.}
+        \item {Implemented queue-based capacity management system enabling transparent delivery estimates and finite production capacity tracking for made-to-order goods.}
+        \item {Built infrastructure-as-code deployment using Terraform with Cloudflare D1 (distributed SQLite), R2 object storage, and KV sessions achieving 99.9\% uptime SLA.}
+        \item {Designed comprehensive adapter pattern architecture ensuring zero vendor lock-in with migration paths to PostgreSQL, AWS S3, and traditional hosting platforms.}
+        \item {Established TDD workflow with Vitest and Playwright targeting 85\%+ code coverage, SLSA Level 3 supply chain security, and 12-Factor App compliance.}
+      \end{cvitems}
+    }
+
+  \cventry
+    {Creator \& Maintainer}
     {Alle - Custom Task Management SaaS}
     {Open Source}
     {2024 - Present}
@@ -210,6 +225,21 @@ Strong advocate for clean architecture, test-driven development, and twelve-fact
         \item {Implemented advanced features including drag-and-drop task organization, automatic rollover, recurring patterns, and offline-first architecture with service workers.}
         \item {Achieved 85\% code coverage through comprehensive testing strategy with 60+ unit, integration, and E2E tests using Jest, Playwright, and Rust testing frameworks.}
         \item {Deployed containerized application using Docker Compose, SeaORM with SQLite, and Tower HTTP framework with 99.9\% uptime.}
+      \end{cvitems}
+    }
+
+  \cventry
+    {Creator \& Architect}
+    {OpenHaven - Multi-Cloud Personal Infrastructure Orchestrator}
+    {Open Source}
+    {2026 - Present}
+    {
+      \begin{cvitems}
+        \item {Architecting convention-driven cloud orchestration platform automating deployment of self-hosted services (email, files, passwords, git, AI) across user-owned multi-cloud infrastructure.}
+        \item {Designed multi-cloud cost optimization strategy distributing services across providers (Hetzner, Backblaze B2, Cloudflare) achieving 75-85\% cost savings vs SaaS equivalents (\$5-10/month vs \$40-65/month).}
+        \item {Established infrastructure-as-code architecture using Terraform and Docker Compose with zero vendor lock-in, enabling full infrastructure export and user sovereignty.}
+        \item {Defined comprehensive service stack including Keycloak SSO, Nextcloud, Mailcow, Gitea, Vaultwarden, WireGuard VPN, and Ollama AI with opinionated defaults and override mechanisms.}
+        \item {Created extensive technical documentation including Architecture Decision Records (ADRs), stack decisions, and deployment specifications following 12-Factor App principles.}
       \end{cvitems}
     }
 
