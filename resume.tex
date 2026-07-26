@@ -4,7 +4,7 @@
 %-------------------------------------------------------------------------------
 % CONFIGURATIONS
 %-------------------------------------------------------------------------------
-\documentclass[11pt, a4paper]{awesome-cv}
+\documentclass[11pt, letterpaper]{awesome-cv}
 
 % Configure page margins
 \geometry{left=1.5cm, top=1.0cm, right=1.5cm, bottom=1.8cm, footskip=.5cm}
@@ -43,7 +43,7 @@
 
 % Print the footer with page numbers
 \makecvfooter
-  {\today}
+  {July 2026}
   {Nate Stott~~~·~~~Résumé}
   {\thepage}
 
@@ -52,19 +52,11 @@
 %-------------------------------------------------------------------------------
 
 %-------------------------------------------------------------------------------
-\cvsection{Professional Summary}
+\cvsection{Summary}
 %-------------------------------------------------------------------------------
 
 \begin{cvparagraph}
-Associate Software Engineer at Domo building scalable data pipelines and cloud integrations. MS Computer Science candidate specializing in AI/ML with published research in IEEE and ACM. Nominated for TA of the Year 2025 for exceptional teaching and mentoring in software engineering and multi-agent systems.
-
-\vspace{1.5mm}
-
-Strong advocate for clean architecture, test-driven development, and twelve-factor methodology. Linux power user (Arch/NixOS) with deep systems programming knowledge. Daily LeetCode practitioner and CodeCrafters contributor maintaining sharp algorithmic skills.
-
-\vspace{1.5mm}
-
-\textbf{Core competencies:} distributed systems \& data engineering, AI/ML implementation, cloud-native architecture, DevOps automation, technical leadership \& mentoring.
+Associate Software Engineer at Domo building the query engine that runs the platform, working across Java, C++, and Go services. MS Computer Science candidate at Utah State University with published research in IEEE and ACM. Strong advocate for clean architecture, test-driven development, and twelve-factor methodology. Linux power user with hands-on systems programming and full-stack engineering through personal projects.
 \end{cvparagraph}
 
 %-------------------------------------------------------------------------------
@@ -107,7 +99,7 @@ Strong advocate for clean architecture, test-driven development, and twelve-fact
 
   \cvskill
     {Systems}
-    {Linux (Arch, NixOS, Debian, RHEL, Omarchy), FreeBSD, Windows, macOS; systemd, QEMU/KVM, VMware, Multipass; SSH, Tailscale, OpenSSH.}
+    {Linux (Arch, NixOS, Debian, RHEL, Omarchy), FreeBSD, Windows, macOS; systemd, QEMU/KVM, VMware, Multipass; Proxmox VE, TrueNAS Scale; SSH, Tailscale, OpenSSH.}
 
 \end{cvskills}
 
@@ -118,33 +110,18 @@ Strong advocate for clean architecture, test-driven development, and twelve-fact
 \begin{cventries}
 
   \cventry
-    {Associate Software Engineer}
+    {Associate Software Engineer {\enskip\cdotp\enskip} promoted from Software Engineer Intern}
     {Domo}
     {American Fork, Utah}
-    {Apr. 2026 - Present}
+    {Sep. 2025 - Present}
     {
       \begin{cvitems}
         \item {Build and ship features across Domo's data core --- the query engine that runs the entire platform --- working across Java, C++, and Go services covering DataSet ingestion, query execution, and data transformation.}
-        \item {Dig into complex CRIs spanning Adrenaline DataFlow, Domo's custom database internals, and multi-service call stacks, tracking down root causes and shipping fixes.}
-        \item {Implement Debezium-based CDC pipelines for real-time data replication, wiring up change event streams across distributed data sources.}
-        \item {Work directly inside Domo's proprietary database engine and Adrenaline DataFlow, fixing correctness bugs and improving query execution performance at the storage and processing layer.}
-        \item {Join customer support calls to help diagnose live data integration failures, translating deep technical findings into fast resolutions that directly unblock customers.}
+        \item {Implement Debezium-based CDC pipelines for real-time data replication, wiring change event streams across distributed data sources.}
+        \item {Track down CRIs spanning Adrenaline DataFlow, Domo's custom database internals, and multi-service call stacks, fixing correctness bugs and improving query execution performance at the storage and processing layer.}
+        \item {Join customer support calls to diagnose live data integration failures, translating deep technical findings into fast resolutions that unblock customers.}
         \item {Represented the data core team at Domopalooza --- Domo's annual user conference --- engaging with enterprise customers and showcasing platform capabilities.}
-      \end{cvitems}
-    }
-
-  \cventry
-    {Software Engineer Intern}
-    {Domo}
-    {American Fork, Utah}
-    {Sep. 2025 - Apr. 2026}
-    {
-      \begin{cvitems}
-        \item {Led a team of 3 fellow interns, assigning tasks, unblocking teammates, and driving consistent sprint delivery across the internship program.}
-        \item {Shipped production code across Java, C++, and Go services in Domo's data core --- the query processing backbone of the entire product --- building out DataSet ingestion pipelines that run at scale.}
-        \item {Tracked down and fixed CRIs in Adrenaline DataFlow and JDBC/REST connector integrations, reading service logs, analyzing SQL execution plans, and shipping production fixes.}
-        \item {Built and debugged connectors to BigQuery, Snowflake, Redshift, and Databricks, implementing OAuth, schema mapping, and cursor-based pagination to get reliable, idempotent data ingestion working correctly.}
-        \item {Practiced TDD when building connector and ingestion features, writing tests first to drive design and catch regressions; joined customer support calls to help debug live data integration issues.}
+        \item {Promoted from intern after leading a team of 3 to consistent sprint delivery and shipping production connectors to BigQuery, Snowflake, Redshift, and Databricks with OAuth, schema mapping, and cursor-based pagination.}
       \end{cvitems}
     }
 
@@ -157,8 +134,7 @@ Strong advocate for clean architecture, test-driven development, and twelve-fact
       \begin{cvitems}
         \item {Deliver lectures and labs for CS5110 (Multi-Agent Systems) and CS3450 (Introduction to Software Engineering), exceeding traditional TA responsibilities with direct instruction.}
         \item {Mentor students on software development best practices, design patterns, and real-world engineering challenges, preparing them for professional careers.}
-        \item {Organize study groups and office hours to enhance student engagement, achieving 95\% student satisfaction rating.}
-        \item {Collaborate with faculty on curriculum development and research projects in multi-agent systems and AI education.}
+        \item {Achieved 95\% student satisfaction rating through organized study groups and office hours; nominated for TA of the Year 2025.}
       \end{cvitems}
     }
 
@@ -169,45 +145,15 @@ Strong advocate for clean architecture, test-driven development, and twelve-fact
     {Oct. 2024 - Sep. 2025}
     {
       \begin{cvitems}
-        \item {Championed Test-Driven Development (TDD) adoption, increasing code coverage from 40\% to 85\% and reducing production bugs by 50\%.}
-        \item {Conducted security audits identifying 12 critical vulnerabilities in web applications, implementing fixes that improved security posture by 70\%.}
+        \item {Championed Test-Driven Development (TDD) adoption, increasing code coverage from 40\% to 85\%.}
         \item {Led Docker containerization initiative, reducing deployment time from 2 hours to 15 minutes and improving environment consistency across 5 development teams.}
-        \item {Migrated team from Azure DevOps to GitHub with CI/CD pipeline automation, reducing build times by 35\% and improving developer productivity.}
-        \item {Architected workflow automation solutions using n8n and custom scripts, saving 100+ hours/month across departments and reducing operational costs by \$50K annually.}
-        \item {Developed full-stack applications using .NET (C\#) and React, delivering 8 production features serving 500+ internal users.}
-      \end{cvitems}
-    }
-
-  \cventry
-    {Software Engineer Intern}
-    {ASPIRE Research Center}
-    {Logan, Utah}
-    {Jul. 2024 - Dec. 2024}
-    {
-      \begin{cvitems}
-        \item {Collaborated on upgrading electric bus fleet infrastructure from OCPP 1.6.1 to OCPP 2.0.1, ensuring compatibility and functionality across charging stations.}
-        \item {Implemented remote sensing technologies and analytics to enhance reliability and performance of ebus charging stations and infrastructure.}
-        \item {Developed intuitive UI tools for real-time monitoring of ebus fleet status and charging ecosystem, improving operational efficiency by 30\%.}
-      \end{cvitems}
-    }
-
-  \cventry
-    {Full Stack Developer Intern}
-    {iFIT}
-    {Logan, Utah}
-    {May 2024 - Aug. 2024}
-    {
-      \begin{cvitems}
-        \item {Developed user-friendly web interfaces using React.js/Next.js, ensuring cross-browser compatibility and responsiveness across desktop and mobile platforms.}
-        \item {Created RESTful APIs and GraphQL endpoints for seamless communication between front-end and back-end systems, reducing API response times by 25\%.}
-        \item {Contributed to debugging, troubleshooting, and participated in code reviews to maintain code quality and optimize performance.}
+        \item {Migrated team from Azure DevOps to GitHub with CI/CD pipeline automation, reducing build times by 35\%.}
+        \item {Architected workflow automation solutions using n8n and custom scripts that removed recurring manual work across departments.}
+        \item {Developed full-stack internal applications using .NET (C\#) and React, delivering 8 production features.}
       \end{cvitems}
     }
 
 \end{cventries}
-
-
-
 
 %-------------------------------------------------------------------------------
 \cvsection{Projects}
@@ -217,114 +163,36 @@ Strong advocate for clean architecture, test-driven development, and twelve-fact
 
   \cventry
     {Creator \& Maintainer}
-    {Artisan Commerce - E-Commerce Platform with Queue-Based Capacity Management}
-    {Open Source}
+    {Artisan Commerce --- Serverless E-Commerce Platform}
+    {Personal Project}
     {2026 - Present}
     {
       \begin{cvitems}
-        \item {Architected serverless edge platform for artisan e-commerce using SvelteKit frontend and Cloudflare Workers backend, optimized for <\$5/month operational costs.}
-        \item {Implemented queue-based capacity management system enabling transparent delivery estimates and finite production capacity tracking for made-to-order goods.}
-        \item {Built infrastructure-as-code deployment using Terraform with Cloudflare D1 (distributed SQLite), R2 object storage, and KV sessions achieving 99.9\% uptime SLA.}
-        \item {Designed comprehensive adapter pattern architecture ensuring zero vendor lock-in with migration paths to PostgreSQL, AWS S3, and traditional hosting platforms.}
-        \item {Established TDD workflow with Vitest and Playwright targeting 85\%+ code coverage, SLSA Level 3 supply chain security, and 12-Factor App compliance.}
+        \item {Architected a serverless edge platform for artisan e-commerce with a SvelteKit frontend and a Hono backend on Cloudflare Workers, featuring queue-based capacity management for made-to-order goods and under \$5/month operating cost.}
+        \item {Built the data and storage layer on Cloudflare D1 and R2 with an adapter-pattern architecture ensuring zero vendor lock-in, and a TDD workflow (Vitest + Playwright) targeting 85\%+ code coverage.}
       \end{cvitems}
     }
 
   \cventry
     {Creator \& Maintainer}
-    {Alle - Custom Task Management SaaS}
-    {Open Source}
+    {Alle --- Full-Stack Task Management}
+    {Personal Project}
     {2024 - Present}
     {
       \begin{cvitems}
-        \item {Architected full-stack task management application using React 19/TypeScript frontend and Rust/Tokio backend with GraphQL API, serving 100+ daily active users.}
-        \item {Implemented advanced features including drag-and-drop task organization, automatic rollover, recurring patterns, and offline-first architecture with service workers.}
-        \item {Achieved 85\% code coverage through comprehensive testing strategy with 60+ unit, integration, and E2E tests using Jest, Playwright, and Rust testing frameworks.}
-        \item {Deployed containerized application using Docker Compose, SeaORM with SQLite, and Tower HTTP framework with 99.9\% uptime.}
+        \item {Architected a full-stack task manager as a TypeScript monorepo with a SvelteKit (Svelte 5) frontend and a Bun backend, using an adapter-pattern architecture with a repository pattern for data access.}
+        \item {Exposed an OpenAPI API validated with Zod, with unit tests via Bun's test runner and E2E tests via Playwright across the client, server, and shared packages.}
       \end{cvitems}
     }
 
   \cventry
-    {Creator \& Architect}
-    {OpenHaven - Multi-Cloud Personal Infrastructure Orchestrator}
-    {Open Source}
-    {2026 - Present}
+    {Creator \& Maintainer}
+    {LazyCSV --- Terminal UI for CSV Files}
+    {Personal Project}
+    {2024 - Present}
     {
       \begin{cvitems}
-        \item {Architecting convention-driven cloud orchestration platform automating deployment of self-hosted services (email, files, passwords, git, AI) across user-owned multi-cloud infrastructure.}
-        \item {Designed multi-cloud cost optimization strategy distributing services across providers (Hetzner, Backblaze B2, Cloudflare) achieving 75-85\% cost savings vs SaaS equivalents (\$5-10/month vs \$40-65/month).}
-        \item {Established infrastructure-as-code architecture using Terraform and Docker Compose with zero vendor lock-in, enabling full infrastructure export and user sovereignty.}
-        \item {Defined comprehensive service stack including Keycloak SSO, Nextcloud, Mailcow, Gitea, Vaultwarden, WireGuard VPN, and Ollama AI with opinionated defaults and override mechanisms.}
-        \item {Created extensive technical documentation including Architecture Decision Records (ADRs), stack decisions, and deployment specifications following 12-Factor App principles.}
-      \end{cvitems}
-    }
-
-  \cventry
-    {Creator}
-    {Homelab - Infrastructure Automation Platform}
-    {Open Source}
-    {2023 - Present}
-    {
-      \begin{cvitems}
-        \item {Built infrastructure-as-code homelab with automated deployment, containerized services using Docker/Kubernetes, and n8n workflow automation.}
-        \item {Configured network security with VLANs, firewall rules, and Tailscale VPN for secure remote administration of self-hosted applications.}
-      \end{cvitems}
-    }
-
-  \cventry
-    {Creator}
-    {StdLib - Standard Library from First Principles}
-    {Open Source}
-    {2025}
-    {
-      \begin{cvitems}
-        \item {Implemented standard library with core data structures, algorithms, and math utilities entirely from scratch in Rust without any third-party dependencies.}
-        \item {Built comprehensive collection including vectors, linked lists, hash maps, trees, sorting algorithms, and memory management utilities.}
-        \item {Demonstrates deep understanding of low-level memory management, algorithm complexity analysis, and systems programming concepts.}
-      \end{cvitems}
-    }
-
-  \cventry
-    {Creator}
-    {NateOS - Custom Operating System}
-    {Open Source}
-    {2025}
-    {
-      \begin{cvitems}
-        \item {Developed monolithic operating system from scratch using x86 Assembly and C, including custom bootloader, kernel, and memory management.}
-        \item {Implemented process scheduling, interrupt handling, GDT/IDT setup, and hardware interaction for low-level systems programming experience.}
-      \end{cvitems}
-    }
-
-\end{cventries}
-
-%-------------------------------------------------------------------------------
-\cvsection{Publications}
-%-------------------------------------------------------------------------------
-
-\begin{cventries}
-
-  \cventry
-    {Electric Vehicle Charger Reservation Service}
-    {IEEE}
-    {Remote}
-    {Aug. 2024}
-    {
-      \begin{cvitems}
-        \item {Published research on web application enabling precise management of EV charging reservations with dynamic power curtailment using LSTM neural networks and OCPP protocol.}
-        \item {System currently deployed at Utah State University's Electric Vehicle Roadway (EVR) facility.}
-      \end{cvitems}
-    }
-
-  \cventry
-    {Comparing Feedback from Large Language Models and Instructors}
-    {ACM}
-    {Remote}
-    {Apr. 2024}
-    {
-      \begin{cvitems}
-        \item {Co-authored paper presented at Learning@Scale 2024 evaluating AI feedback effectiveness in computer science education.}
-        \item {Developed algorithms to prompt ChatGPT-4 to provide automated feedback on student code submissions.}
+        \item {Built a blazingly fast terminal UI (Rust) for CSV files with vim-style navigation and memory-mapped I/O, handling files larger than RAM with a small memory footprint for mouse-free data exploration in the terminal.}
       \end{cvitems}
     }
 
@@ -343,9 +211,7 @@ Strong advocate for clean architecture, test-driven development, and twelve-fact
     {Aug. 2025 - Jul. 2026}
     {
       \begin{cvitems}
-        \item {Focus: Machine learning, multi-agent systems, distributed computing, and cloud-native architectures.}
-        \item {Published research in IEEE (EV charging systems) and ACM (AI in CS education).}
-        \item {Nominated for TA of the Year 2025 for exceptional teaching in CS5110 (Multi-Agent Systems) and CS3450 (Software Engineering).}
+        \item {Focus: machine learning, multi-agent systems, distributed computing. Published in IEEE and ACM. Nominated for TA of the Year 2025.}
       \end{cvitems}
     }
 
@@ -356,21 +222,11 @@ Strong advocate for clean architecture, test-driven development, and twelve-fact
     {Aug. 2021 - Dec. 2024}
     {
       \begin{cvitems}
-        \item {Graduated with honors, maintaining 3.8+ GPA while leading multiple group projects and coordinating cross-functional teams.}
-        \item {Nominated for Undergraduate Researcher of the Year 2024 for contributions to EV charging and AI education research.}
-        \item {Active member of Free Software and Linux Club, participating in hackathons and coding competitions.}
+        \item {Graduated with honors (3.8+ GPA). Nominated for Undergraduate Researcher of the Year 2024.}
       \end{cvitems}
     }
 
 \end{cventries}
 
 %-------------------------------------------------------------------------------
-
-\vspace*{\fill}
-\begin{center}
-    \textbf{For more details, visit my LinkedIn.}
-\end{center}
-
-%-------------------------------------------------------------------------------
 \end{document}
-
